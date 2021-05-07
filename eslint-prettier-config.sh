@@ -124,18 +124,10 @@ else
   "extends": [
     "airbnb",
     "plugin:prettier/recommended",
-    "prettier/react"
+    "prettier"
   ],
 
   "root": true,
-  "parserOptions": {
-        "ecmaVersion": 2020,
-        "sourceType": 'module',
-        "ecmaFeatures": {
-            jsx: true
-        }
-    },
-
   "env": {
     "browser": true,
     "commonjs": true,
@@ -143,6 +135,7 @@ else
     "jest": true,
     "node": true
   },
+  
   "rules": {
     "jsx-a11y/href-no-hash": ["off"],
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
